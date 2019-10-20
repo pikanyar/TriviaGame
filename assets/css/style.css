@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;  
+  }
+
+body {
+    background-color: black;;
+}
+#container {
+    height: 500px;
+    width: 700px;
+    background-color: white;
+    margin: 30px auto;
+    border-radius: 8px;
+    padding:25px;
+}
+
+/*#quiz {
+    min-height: 50px;
+    background-color: violet;
+    border-radius: 8px;
+    color: teal;
+    font-size: 20px;
+}*/
+
+#start {
+    padding: 15px;
+    margin: 15px;
+    margin-right: 152px;
+    margin-left: 150px;
+    padding-right: 150px;
+    padding-left: 150px;
+    background-color: yellowgreen;
+
+}
+
+h1 {
+    padding-left: 604px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    color: violet;
+}
