@@ -2,40 +2,118 @@
     box-sizing: border-box;  
   }
 
-body {
-    background-color: black;;
+  body {
+
+    position: relative;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 14px;
+    background: url(2-empty-movie-theatre.w700.h700.jpg);
+
 }
+
 #container {
-    height: 500px;
-    width: 700px;
+    height: 400px;
+    width: 1300px;
     background-color: white;
     margin: 30px auto;
     border-radius: 8px;
-    padding:25px;
-}
-
-/*#quiz {
-    min-height: 50px;
-    background-color: violet;
-    border-radius: 8px;
-    color: teal;
+    padding-left: 30px;
+    padding-right: 30px;
     font-size: 20px;
-}*/
-
-#start {
-    padding: 15px;
-    margin: 15px;
-    margin-right: 152px;
-    margin-left: 150px;
-    padding-right: 150px;
-    padding-left: 150px;
-    background-color: yellowgreen;
-
+    line-height: 14px;
+  
 }
+
+
+.btn {
+    margin-left: 420px;
+    padding-left: 40px;
+    padding: 15px 150px;
+    font-size: 30px;
+    background-color: black;
+    border: 2px solid grey;
+    color: white;
+}
+
 
 h1 {
-    padding-left: 604px;
-    padding-bottom: 60px;
-    padding-top: 60px;
-    color: violet;
+    padding-left: 440px;
+    padding-bottom: 170px;
+    padding-top: 20px;
+    font-size: 50px;
+   
+}
+
+.main-content {
+  padding-bottom: 50px;
+ 
+}
+
+
+#question1 {
+    padding-bottom: 1px;
+    padding-left: 20px;
+    
+}
+
+#answer1 {
+    padding-bottom: 1px;
+    background: white;
+    padding-left: 20px;
+
+
+}
+
+#question2 {
+    padding-bottom: 1px;
+    background: white;
+    padding-left: 20px;
+}
+
+#answer2 {
+    padding-bottom: 2px;
+    background: white;
+    padding-left: 20px;
+}
+
+#question3 {
+    padding-bottom: 2px;
+    background: white;
+    padding-left: 20px;
+}
+
+#answer3 {
+    padding-bottom: 2px;
+    background: white;
+    padding-left: 20px;
+}
+
+#timeLeft {
+    background: white;
+    padding-left: 20px;
+}
+
+#correct {
+    padding-bottom: 10px;
+    padding-left: 520px;
+    font-size: 20px;
+    
+}
+
+#incorrect {
+    padding-bottom: 10px;
+    padding-left: 520px;
+    font-size: 20px;
+    
+}
+
+#unanswered {
+    padding-bottom: 10px;
+    padding-left: 520px;
+    font-size: 20px;
+}
+
+#finalMessage {
+    padding-left: 550px;
+    font-size: 40px;
 }

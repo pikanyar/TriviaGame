@@ -30,54 +30,55 @@ $(document).ready(function () {
     //user click on start button to create a new game
     $("#start").click(function () {
         $(this).hide();
-    });
 
-    // Display initial time countdown
-    $("#timeLeft").html("<h2>Time Remaining: 20 Seconds</h2>" + "<br>");
 
-    // Start timer countdown
-    run();
+        // Display initial time countdown
+        $("#timeLeft").html("<h2>Time Remaining: 20 Seconds</h2>" + "<br>");
 
-    // Display questions 
+        // Start timer countdown
+        run();
 
-    $("#question1").html("<h3>" + myQuestions[0].question + "</h3>");
-    $("#answer1").html("<input type='radio' name='answer1' value='0'>" + "<label>" + myQuestions[0].answers[0] + "</label>"
-        + "<input type='radio' name='answer1' value='1'>" + "<label>" + myQuestions[0].answers[1] + "</label>"
-        + "<input type='radio' name='answer1' value='2'>" + "<label>" + myQuestions[0].answers[2] + "</label><br><br>"
-    );
+        // Display questions 
 
-    $("#question2").html("<h3>" + myQuestions[1].question + "</h3>");
-    $("#answer2").html("<input type='radio' name='answer2' value='0'>" + "<label>" + myQuestions[1].answers[0] + "</label>"
-        + "<input type='radio' name='answer2' value='1'>" + "<label>" + myQuestions[1].answers[1] + "</label>"
-        + "<input type='radio' name='answer2' value='2'>" + "<label>" + myQuestions[1].answers[2] + "</label><br><br>"
-    );
+        $("#question1").html("<h3>" + myQuestions[0].question + "</h3>");
+        $("#answer1").html("<input type='radio' name='answer1' value='0'>" + "<label>" + myQuestions[0].answers[0] + "</label>"
+            + "<input type='radio' name='answer1' value='1'>" + "<label>" + myQuestions[0].answers[1] + "</label>"
+            + "<input type='radio' name='answer1' value='2'>" + "<label>" + myQuestions[0].answers[2] + "</label><br><br>"
+        );
 
-    $("#question3").html("<h3>" + myQuestions[2].question + "</h3>");
-    $("#answer3").html("<input type='radio' name='answer3' value='0'>" + "<label>" + myQuestions[2].answers[0] + "</label>"
-        + "<input type='radio' name='answer3' value='1'>" + "<label>" + myQuestions[2].answers[1] + "</label>"
-        + "<input type='radio' name='answer3' value='2'>" + "<label>" + myQuestions[2].answers[2] + "</label><br><br>"
-    );
+        $("#question2").html("<h3>" + myQuestions[1].question + "</h3>");
+        $("#answer2").html("<input type='radio' name='answer2' value='0'>" + "<label>" + myQuestions[1].answers[0] + "</label>"
+            + "<input type='radio' name='answer2' value='1'>" + "<label>" + myQuestions[1].answers[1] + "</label>"
+            + "<input type='radio' name='answer2' value='2'>" + "<label>" + myQuestions[1].answers[2] + "</label><br><br>"
+        );
 
-    // Submit button
-    $("#submit").html("<button id='done' class='btn'>Done</button>");
+        $("#question3").html("<h3>" + myQuestions[2].question + "</h3>");
+        $("#answer3").html("<input type='radio' name='answer3' value='0'>" + "<label>" + myQuestions[2].answers[0] + "</label>"
+            + "<input type='radio' name='answer3' value='1'>" + "<label>" + myQuestions[2].answers[1] + "</label>"
+            + "<input type='radio' name='answer3' value='2'>" + "<label>" + myQuestions[2].answers[2] + "</label><br><br>"
+        );
 
-    // Click event runs keepingScore() and displayResults() when user clicks Done button
-    $("#done").on("click", function () {
-
+        // Submit button
+        $("#submit").html("<button id='done' class='btn'>Done</button>");
 
         // Click event runs keepingScore() and displayResults() when user clicks Done button
-        /*$("#done").click(function () {
-            console.log("Thanks for visiting!");
-        });*/
+        $("#done").on("click", function () {
+
+
+            // Click event runs keepingScore() and displayResults() when user clicks Done button
+            /*$("#done").click(function () {
+                console.log("Thanks for visiting!");
+            });*/
 
 
 
-        // Keeping track of score based on correct, incorrect, and unanswered
-        score();
+            // Keeping track of score based on correct, incorrect, and unanswered
+            score();
 
-        // Display 
-        displayResults();
+            // Display 
+            displayResults();
 
+        });
 
     });
 
@@ -109,7 +110,7 @@ $(document).ready(function () {
 
     function stop() {
 
-        //  Clears intervalId
+
         clearInterval(intervalId);
     }
 
