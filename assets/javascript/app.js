@@ -86,7 +86,7 @@ $(document).ready(function () {
     function run() {
 
         clearInterval(intervalId);
-        intervalId = setInterval(decrement, 1000);
+        intervalId = setInterval(decrement, 100000);
     }
 
     function decrement() {
@@ -115,7 +115,7 @@ $(document).ready(function () {
     }
 
 
-    // Function used for displaying results in terms of correct, incorrect, and unanswered 
+    // Function used for displaying results in terms of correct, incorrect, and unanswered
     function displayResults() {
 
         $("#timeLeft").hide();
@@ -133,7 +133,7 @@ $(document).ready(function () {
         $("#unanswered").html("Unanswered: " + unanswered);
     }
 
-    // Function keeps score in terms of correct, incorrect, and unanswered 
+    // Function keeps score in terms of correct, incorrect, and unanswered
     function score() {
 
         var userAnswer1 = $("input[name='answer1']:checked").val();
